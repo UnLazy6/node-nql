@@ -3,9 +3,10 @@
     <h2>Home</h2>
 
     {{#each books}}
-    <div>
+    <div class="book">
         <h3>Título: {{this.title}}</h3>
         <p>Quantidade de páginas: {{this.pageqty}}</p>
+        <a href="/book/{{this.id}}">Ver mais</a>
     </div>
     {{/each}}
     
